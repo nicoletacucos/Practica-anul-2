@@ -1,0 +1,16 @@
+Tema 12
+
+Cerinte:
+-
+
+
+
+Pentru Aplicație/script urmărire câmpuri/pagini/preț resurse de pe internet
+- Python sau Bash
+- Python foloseste biblioteci precum BeautifulSoup si Scrapy pentru a putea extreage informatiile dorite
+	-sudo apt install python3-pip
+	-pip install beautifulsoup4
+-Bash foloseste utilitarul curl pentru descărcarea conținutului de pe internet .
+- site-urile trebuie sa ofere permisiunea de a extrage informatii
+- configurarea scriptului sau aplicatiei sa ruleze in mod automat la intervale de timp definite pentru a verifica/ actualiza informatiile dorite
+- manipularea datelor: filtrarea rezultatelor dupa numite criterii sau crearea unor statistici bazate pe datele extrase
