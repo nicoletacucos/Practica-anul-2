@@ -1,0 +1,10 @@
+CSV- Comma Separated Values
+import CSV - lucrul cu fisiere CSV
+import request- trimite cerereri HTTP la un URL pentru continutul paginei web
+from bs4 import BeautifulSoup- faciliteaza analiza si parsarea continutului HTML
+response = requests.get(url)-trimite cerere GET la URL si stocheaza raspunsul in variabila response
+movie_containers = soup.find_all("td", class_="titleColumn") - face delimitarea pe <td> pentru a gasi toate liniile
+with open("imdb_movies.csv", "w", newline="") as csvfile: - deschide fisierul csv pentru a scrie
+writer=csv.writer(csvfile): -această linie creează un obiect de scriere writer utilizând funcția csv.writer, care permite scrierea datelor în fișierul CSV specificat
+strip()-elimina spatiile albe
+import notify2-notificari in linux
