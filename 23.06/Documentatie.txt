@@ -1,0 +1,2 @@
+import webbrowser - pentru a redirecționa textul într-o fereastră sau într-un browser
+webbrowser.open_new_tab(link_text) - deschide linkul
