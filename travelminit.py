@@ -63,8 +63,9 @@ def search_results():
             result_text.insert(tk.END, f"{name_text}, {star_count} stars\n")
             result_text.insert(tk.END, f"Location: {location_text}\n")
             result_text.insert(tk.END, f"Number of people: {number_of_people}\n")
-            result_text.insert(tk.END, f"Link: ")
-            result_text.insert(tk.END, link_text, "link")
+            link_button = tk.Button(result_text, text="Open Link", font=("Arial", 10), width=10)
+            link_button.config(command=lambda l=link_text: webbrowser.open_new_tab(l))
+            result_text.window_create(tk.END, window=link_button)
             result_text.insert(tk.END, "\n\n")
              
         print(name_text, star_count, location_text, number_of_people, nr, link_text)
